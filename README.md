@@ -34,17 +34,13 @@ Image arguments are available in the Dockerfile .
 
 On the the docker-compose.yml you can bind a volume to the web root directory by using the commented line or by using -v in the running step ..
 
-- Build Image :
+- Build Image : docker-compose build
 
-docker-compose build
-
-- Run :
-
-docker-compose run --service-ports drupal_server
+- Run : docker-compose run --service-ports drupal_server
 
 optional to mount a volume :
 
-docker-compose run --service-ports -v ~/Documents/elsan: /home/www.vactory8.ma/public_html drupal_server
+docker-compose run --service-ports -v ~/Documents/elsan:/home/www.drupal8.ma/public_html drupal_server
 
 - [Docker commands sheet](https://groupe-sii.github.io/cheat-sheets/docker/index.html)
 
