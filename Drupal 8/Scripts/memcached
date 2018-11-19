@@ -1,0 +1,5 @@
+PORT="11211"
+USER="memcached”
+MAXCONN="2000"
+CACHESIZE="4096"
+OPTIONS=""
