@@ -1,11 +1,11 @@
 FROM centos:latest
-MAINTAINER Hasbi Hamza <h.hasbi@void.fr>
+MAINTAINER Hasbi Hamza <h.hasbi@void.fr> <hamza.hasbi@gmail.com>
 # ---------Image Arguments------------#
-ARG project_home=www.vactory8.ma
-ARG project_name=vactory8
-ARG database_name=vactory8_db
-ARG database_user=vactory8_db_user
-ARG database_user_psswd=voidtech
+ARG project_home=www.drupal8.ma
+ARG project_name=drupal8
+ARG database_name=drupal8_db
+ARG database_user=druapl8_db_user
+ARG database_user_psswd=githubaccess
 
 
 # --------- Basic Utilities + Apache ------------#

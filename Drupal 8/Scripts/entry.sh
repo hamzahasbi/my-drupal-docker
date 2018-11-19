@@ -9,8 +9,8 @@ sed -i 's/;realpath_cache_size = 4096k/realpath_cache_size = 256k/g' /etc/php.in
 sed -i 's/;realpath_cache_ttl = 120/realpath_cache_ttl = 3600/g' /etc/php.ini
 sed -i 's/;error_log = syslog/error_log = syslog/g' /etc/php.ini
 echo -e 'magic_quotes_gpc = Off\napc.shm_size = 128M\nmagic_quotes_runtime = Off\nregister_globals	= Off' >> /etc/php.ini
-echo -e 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> /home/www.vactory8.ma/.bashrc
-source /home/www.vactory8.ma/.bashrc
+echo -e 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> /home/www.drupal8.ma/.bashrc
+source /home/www.drupal8.ma/.bashrc
 mailcatcher --http-ip=0.0.0.0
 # ---------SSL Certificate ------------#
 openssl genrsa -des3 -passout pass:x -out /etc/httpd/ssl/apache.pass.key 2048

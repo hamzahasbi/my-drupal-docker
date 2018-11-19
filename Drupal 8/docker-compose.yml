@@ -13,7 +13,7 @@ services:
       - '1081:1080'
       - '1026:1025'
     volumes:
-#      - 'Project_path':/home/www.vactory8.ma/public_html
+#      - 'Project_path':/home/www.drupal8.ma/public_html
       - data:/var/lib/mysql
     environment:
       - VIRTUAL_HOST=dev.drupal
